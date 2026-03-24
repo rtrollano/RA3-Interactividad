@@ -1,0 +1,347 @@
+form {
+  background:#fff;
+  border-radius: 20px;
+  padding: 5%;
+  border: 10px solid purple;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+h1, p {
+text-align:center;;
+
+}
+body, h1 {
+  align-items: center;
+  justify-content: center;
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 250px;
+  letter-spacing: 4px;
+
+}
+#formulario {
+    background: linear-gradient(to top, darkblue 0%, white 100%);
+}
+#intera {
+  background: rgb(230, 230, 175);
+}
+.campos {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.campos input {
+  border: 2px solid;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+  width: 275px;
+}
+
+.campos input:focus {
+  border-color: purple;
+  outline: none;
+}
+
+.flotante {
+  color: #81888f;
+  background: white;
+  font-size: 16px;
+  left: 10px;
+  padding: 0 4px;
+  pointer-events: none;
+  position: absolute;
+  top: 5px;
+  transition: all 0.3s ease;
+}
+
+.flotante.fija {
+  color: purple!important;
+  font-size: 12px;
+  top: -10px;
+  background-color: white;
+}
+
+.campos:has(input:focus) .flotante,
+.campos input:not(:placeholder-shown) + .flotante {
+  color: purple;
+  font-size: 12px;
+  top: -10px;
+}
+
+.campos:has(textarea:focus) .flotante,
+.campos textarea:not(:placeholder-shown) + .flotante {
+  color: purple!important;
+  font-size: 12px;
+  top: -10px;
+  background-color: white;
+}
+
+.msg {
+  bottom: -18px;
+  color: orangered;
+  font-size: 12px;
+  left: 4px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.4s ease;
+}
+
+.campos input:invalid:focus ~ .msg,
+.campos input:invalid:not(:placeholder-shown) ~ .msg {
+  opacity: 1;
+}
+
+button {
+  background: purple;
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  gap: 20%;
+}
+
+button:hover {
+  background: black;
+  border: 3px solid purple;
+
+}
+input[type="color"] {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: purple; 
+    cursor: pointer;
+}
+select, textarea {
+    width: 275px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 15px;
+}
+select, textarea:focus {
+      border: 2px solid purple;
+
+}
+
+.topnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+  gap: 60%;
+  padding: 0 10px;
+  backdrop-filter: blur(10px) saturate(40%);
+  background-color: rgb(127, 240, 113, 0.5);
+  border-radius: 15px;
+  border: 5px solid purple;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.topnav .menu {
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+.topnav .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.colormenu {
+  color:black;
+  text-decoration: none;
+
+}
+.colormenu:hover {
+  color: white;
+  letter-spacing: 3px;
+  background: green;
+}
+
+#intera input[type="radio"] {
+  display: none;
+    }
+.modos {
+  margin-top: 15%;
+  gap:10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  }
+
+.claro {
+  border-radius: 15px;
+  border: 5px solid black;
+  padding: 2%;
+  max-width: 30%;
+  background-color: white;
+  cursor:pointer;
+}
+.claro:hover {
+text-decoration: underline solid 3px;
+transition: all 0.2s ease-in-out;
+}
+
+.oscuro:hover {
+text-decoration: underline solid 3px;  
+transition: all 0.2s ease-in-out;
+}
+
+.oscuro {
+  border-radius: 15px;
+  border: 5px solid white;
+  padding: 2%;
+  max-width: 35%;
+  background-color: black;
+  color: white;
+  cursor:pointer;
+
+}
+.medio {
+  border-radius: 15px;
+  border: 5px solid black;
+  padding: 2%;
+  max-width: 35%;
+  background-color: gray;
+  color: white;
+  cursor:pointer;
+
+}
+.medio:hover {
+text-decoration: underline solid 3px;  
+transition: all 0.2s ease-in-out;
+}
+
+.medio {
+  border-radius: 15px;
+  border: 5px solid black;
+  padding: 2%;
+  max-width: 35%;
+  background-color: gray;
+  color: white;
+  cursor:pointer;
+
+}
+.medio:hover {
+text-decoration: underline solid 3px;  
+transition: all 0.2s ease-in-out;
+}
+
+.default {
+  border-radius: 15px;
+  border: 5px solid black;
+  padding: 2%;
+  max-width: 35%;
+  color: black;
+  cursor:pointer;
+  background: rgb(230, 230, 175);
+
+
+}
+.default:hover {
+text-decoration: underline solid 3px;  
+transition: all 0.2s ease-in-out;
+}
+
+#intera:has(#claro:checked) label[for="claro"],
+#intera:has(#oscuro:checked) label[for="oscuro"],
+#intera:has(#medio:checked) label[for="medio"],
+#intera:has(#default:checked) label[for="default"] {
+      border: 5px solid red; 
+
+    }
+body:has(#claro:checked) .texto {
+      background: white; 
+      color: black;
+    }
+body:has(#claro:checked) {
+      background: white; 
+    }
+body:has(#oscuro:checked) .texto {
+      background-color: black; 
+      color:white;
+    }
+body:has(#oscuro:checked) {
+      background-color: black; 
+    }
+body:has(#medio:checked) .texto{
+      background-color: grey; 
+      color:white;
+    }
+body:has(#medio:checked) {
+      background-color: grey; 
+    }
+body:has(#default:checked) .texto{
+  background: rgb(230, 230, 175);
+  color: rgb(230, 230, 175);
+    }
+body:has(#default:checked) {
+       background: rgb(230, 230, 175);
+    }
+
+.texto {
+  margin-top: 15%;
+  background: rgb(230, 230, 175);
+  color: rgb(230, 230, 175);
+}
+
+/*Adaptaciones*/
+
+@media (max-width: 768px) {
+ body {
+    margin: 5%;
+    max-width: 1264px;
+    height: 1650px;
+
+  }
+  .espacio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .tabla {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .creascroll {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+}
+@media (min-width: 768px) {
+  body {
+    margin: auto;
+    max-width: 50%;
+    background:#eee;
+    margin-top: 2%
+  }
+
+  .creascroll {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+}

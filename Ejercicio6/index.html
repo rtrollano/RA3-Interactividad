@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici006</title>
+    <link rel="stylesheet" href="estils.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body id="formulario">
+    <nav class="topnav" >     
+        <div class="menu">
+            <a href="index.html" class="colormenu">Índice</a>
+            <a href="interaccio.html" class="colormenu">Interacción</a>
+        </div>
+    </nav>
+    <h1>Formulario y validación RTL</h1>
+    <form class="formulario">
+        <div class="campos">
+            <input type="text" id="nombre" name="nombre" placeholder=" " required title="Campo obligatorio">
+            <label class="flotante" for="nombre">Nombre completo</label>
+            <span class="msg">Campo obligatorio</span>
+        </div>
+        <div class="campos">
+            <input id="email" type="email" name="email" placeholder=" " required title="Indica un correo válido">
+            <label class="flotante" for="email">E-mail</label>
+            <span class="msg">Indica un correo válido</span>
+        </div>
+        <div class="campos">
+            <input id="telf" type="tel" name="telf" placeholder="  " pattern="\+\d{1,3}\d{6,14}" title="Es necesario indicar el '+' y el código del país">
+            <label class="flotante" for="telf">Num. teléfono/móvil</label>
+            <span class="msg">Es necesario indicar el '+' y el código del país</span>
+        </div>
+        <div class="campos">
+            <input type="number" name="edad" id="edad" min="18" max="99" step="5" placeholder=" " title="Ha de ser mayor de edad">
+            <label class="flotante" for="edad">Edad</label>
+            <span class="msg">La edad ha de ser entre 18 y 99 años</span>
+        </div>
+        <div class="campos">
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" title="Indica tu edad de nacimiento">
+            <label  class="flotante fija" for="fecha_nacimiento">Fecha de nacimiento</label>
+            <span class="msg">Indica tu edad de nacimiento</span>
+        </div>
+        <div class="campos">
+            <label  class="flotante fija" for="franja">Franja</label>
+            <input type="time" name="franja" id="franja" title="Franja horaria de contacto">
+            <span class="msg">Franja horaria de contacto</span>
+        </div>
+        <div class="campos">
+            <label class="campos" for="colot">Color favorito</label>
+            <br>
+            <input type="color" name="color" id="color">
+        </div>
+        <div class="campos">
+             <label class="" for="control">Control</label>
+            <br>
+            <input type="range" name="control" id="control">
+        </div>
+        <label class="campos" for="aficiones">Aficiones</label>
+        <br>
+        <label><input type="checkbox" name="aficiones" id="aficiones" value="lectura"> Lectura</label><br>
+        <label><input type="checkbox" name="aficiones" id="aficiones" value="musica"> Música</label><br>
+        <label><input type="checkbox" name="aficiones" id="aficiones" value="viajar"> Viajar</label><br>
+        <label><input type="checkbox" name="aficiones" id="aficiones" value="videojuegos"> Videojuegos</label>
+        <br><br>
+        <label class="campos" for="aficiones">Estudios</label>
+        <br>
+        <label><input type="radio" name="estudios" id="estudios" value="eso" required> ESO</label><br>
+        <label><input type="radio" name="estudios" id="estudios" value="batchiller"> Bachiller</label><br>
+        <label><input type="radio" name="estudios" id="estudios" value="fp"> FP</label><br>
+        <label><input type="radio" name="estudios" id="estudios" value="universidad"> Universidad</label>
+        <br><br>
+        <div class="campos">
+            <label class="flotante fija" for="pais">País</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected hidden>Selecciona una país</option>
+                <option value="es">España</option>
+                <option value="fr">Portugal</option>
+                <option value="it">Italia</option>
+                <option value="it">Alemania</option>
+            </select>
+        </div>
+        <div class="campos">
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder=" " required></textarea>
+            <label class="flotante" for="comentarios">Comentarios</label>
+        </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+    </form>
+</body>
+</html>
