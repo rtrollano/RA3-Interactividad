@@ -1,3 +1,21 @@
+
+/* Pausa amb Interruptor "Toggle" */
+#pause:checked .forma {
+    animation-play-state: running;
+}
+body:has(#pause:checked) .forma {
+  animation-play-state: running;
+}
+.forma {
+  background: orange;
+  height: 100px;
+  width: 100px;
+  animation: bote 0.7s ease-in-out infinite;
+  border-radius: 50%;
+  border: 3px solid black;
+  animation-play-state: paused;
+
+}
 .hero {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
@@ -160,14 +178,6 @@ p {
   gap: 30%;
   display: flex;
   justify-content: center;
-}
-.forma {
-  background: orange;
-  height: 100px;
-  width: 100px;
-  animation: bote 0.7s ease-in-out infinite;
-  border-radius: 50%;
-  border: 3px solid black;
 }
 .cuadro {
   width: 100px;
